@@ -43,14 +43,14 @@ function getNumber(id) {
   console.log(id);
   if (id === "block9") {
     let str = output.innerText;
-    if (str.length === 1 && str[0] === "0") {
+    if (str.length === 1 && str[0] === "0" || str === "NaN" || str === "Infinity" || str === "Invalid expression") {
       str = "";
     }
     str += "9";
     output.innerText = str;
   } else if (id === "block8") {
     let str = output.innerText;
-    if (str.length === 1 && str[0] === "0") {
+    if (str.length === 1 && str[0] === "0" || str === "NaN" || str === "Infinity" || str === "Invalid expression") {
       str = "";
     }
     str += "8";
